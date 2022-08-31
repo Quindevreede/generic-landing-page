@@ -12,11 +12,11 @@ function Navbar() {
                     <h2 className="navbar__logo">MULTI APP</h2>
                 </div>
                 <div className="navbar__links-container">
-                    <p><a href="#home">Home</a></p>
-                    <p><a href="#wgpt3">What is GPT3?</a></p>
-                    <p><a href="#possibility">Open AI</a></p>
-                    <p><a href="#features">Case Studies</a></p>
-                    <p><a href="#blog">Library</a></p>
+                    <p><a href="#part 1">PART 1</a></p>
+                    <p><a href="#part 2">PART 2</a></p>
+                    <p><a href="#part 3">PART 3</a></p>
+                    <p><a href="#part 4">PART 4</a></p>
+                    <p><a href="#part 5">PART 5</a></p>
                 </div>
             </div>
             <div className="navbar__sign-container">
@@ -30,11 +30,11 @@ function Navbar() {
                 {toggleMenu && (
                     <div className="navbar__menu-container scale-up-center">
                         <div className="navbar__menu-container__links">
-                            <p><a href="#home">Home</a></p>
-                            <p><a href="#wgpt3">What is GPT3?</a></p>
-                            <p><a href="#possibility">Open AI</a></p>
-                            <p><a href="#features">Case Studies</a></p>
-                            <p><a href="#blog">Library</a></p>
+                            <p><a href="#part 1">PART 1</a></p>
+                            <p><a href="#part 2">PART 2</a></p>
+                            <p><a href="#part 3">PART 3</a></p>
+                            <p><a href="#part 4">PART 4</a></p>
+                            <p><a href="#part 5">PART 5</a></p>
                         </div>
                         <div className="navbar__menu-container__links__sign">
                             <p>Sign in</p>
