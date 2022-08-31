@@ -1,0 +1,50 @@
+import React, {useState} from 'react';
+import { RiMenu3Line, RiCloseLine} from "react-icons/ri";
+import './navbar.css';
+
+function Navbar() {
+    const [toggleMenu, setToggleMenu] = useState(false);
+
+    return (
+        <div className="navbar-top">
+            <div className="navbar__links-top">
+                <div className="navbar__logo-container">
+                    <h2 className="navbar__logo">MULTI APP</h2>
+                </div>
+                <div className="navbar__links-container">
+                    <p><a href="#home">Home</a></p>
+                    <p><a href="#wgpt3">What is GPT3?</a></p>
+                    <p><a href="#possibility">Open AI</a></p>
+                    <p><a href="#features">Case Studies</a></p>
+                    <p><a href="#blog">Library</a></p>
+                </div>
+            </div>
+            <div className="navbar__sign-container">
+                <p>Sign in</p>
+                <button type="button">Sign up</button>
+            </div>
+            <div className="navbar__menu-top">
+                {toggleMenu
+                    ? <RiCloseLine color="#fff" size={27} onClick={() => setToggleMenu(false)} />
+                    : <RiMenu3Line color="#fff" size={27} onClick={() => setToggleMenu(true)} />}
+                {toggleMenu && (
+                    <div className="navbar__menu-container scale-up-center">
+                        <div className="navbar__menu-container__links">
+                            <p><a href="#home">Home</a></p>
+                            <p><a href="#wgpt3">What is GPT3?</a></p>
+                            <p><a href="#possibility">Open AI</a></p>
+                            <p><a href="#features">Case Studies</a></p>
+                            <p><a href="#blog">Library</a></p>
+                        </div>
+                        <div className="navbar__menu-container__links__sign">
+                            <p>Sign in</p>
+                            <button type="button">Sign up</button>
+                        </div>
+                    </div>
+                )}
+            </div>
+        </div>
+    );
+}
+
+export default Navbar;
