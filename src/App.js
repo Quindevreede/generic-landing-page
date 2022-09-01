@@ -2,6 +2,7 @@ import React from 'react';
 import './app.css';
 
 import { Navbar } from './components';
+import { List } from './containers';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
         <div className="gradient__bg">
           <Navbar />
         </div>
+          <List />
       </div>
   );
 }

@@ -1,0 +1,79 @@
+.list-main {
+    display: flex;
+}
+
+.person__container {
+    width: 40px;
+    column-gap: 0.75rem;
+    margin-left: 2px;
+}
+
+.person__container h4 {
+    margin-bottom: 0.35rem;
+}
+
+.person__details__container {
+    display: flex;
+    flex-direction: row;
+    margin: 0 10px 30px 20px;
+}
+
+.person__details__container-img img {
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: var(--color-bg);
+    margin-right: 15px;
+}
+
+.person__details__container-text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 20px;
+}
+
+.list--button {
+    color: var(--color-headline);
+    width: 70px;
+    padding: 5px;
+    font-size: 13px;
+    border: none;
+    background: var(--color-text);
+    margin: 1rem auto 0 auto;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+.list--clear-button {
+    color: var(--color-headline);
+    width: 100px;
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid var(--color-blog);
+    background: var(--color-text);
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 750px) and (max-width: 1049px){
+    .person__container {
+        flex: 1;
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 4rem;
+        margin-left: -15px;
+    }
+}
+
+@media screen and (min-width: 1050px) {
+    .person__container {
+        flex: 1;
+        display:grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 4rem;
+        margin-left: -5px;
+    }
+}
+
