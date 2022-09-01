@@ -63,7 +63,6 @@
 
 .navbar__menu-top {
     margin-left: 1rem;
-
     display: none;
     position: relative;
 }
@@ -86,7 +85,7 @@
     margin-top: 1rem;
     min-width: 210px;
     border-radius: 5px;
-    box-shadow: 0px 0px 5px rgba(0,0, 0,0.2);
+    box-shadow: 0px 10px 15px rgba(0,0, 0,0.2);
 }
 
 .navbar__menu-container p {
@@ -98,6 +97,11 @@
 }
 
 @media screen and (max-width: 1050px) {
+    .navbar-top {
+        z-index: 10;
+        position: relative;
+    }
+
     .navbar__links-container {
         display: none;
     }
@@ -105,17 +109,21 @@
     .navbar__menu-top {
         display: flex;
     }
+
 }
 
 @media screen and (max-width: 700px) {
     .navbar-top {
         padding: 2rem 4rem;
+        z-index: 9;
+        position: relative;
     }
 }
 
 @media screen and (max-width: 550px) {
     .navbar-top {
         padding: 2rem;
+        z-index: 8;
     }
 
     .navbar__sign-container {

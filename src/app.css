@@ -9,9 +9,27 @@ body {
   background: var(--color-bg);
 }
 
+p {
+  font-family: 'Manrope', sans-serif;
+}
+
 a {
   color: unset;
   text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Manrope', sans-serif;
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+}
+
+ul {
+  list-style-type: none;
 }
 
 .gradient__bg {
@@ -52,6 +70,32 @@ a {
 .scale-up-center {
   -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
   animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+/*
+===============
+Re-Useables
+===============
+*/
+
+.outer-content-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.inner-content-container {
+  flex-basis: 500px;
+  flex-shrink: 1;
+  flex-grow: 0;
+  margin: 0 20px;
+  display: flex;
+  padding-top: 20px;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  position: relative;
 }
 
 @-webkit-keyframes scale-up-center {
