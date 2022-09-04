@@ -32,7 +32,9 @@ function ListComponent() {
                         </div>
                     ))}
                 </article>
+
             <button className="list--clear-button" onClick={() => setList([])}>clear all</button>
+
         </>
     );
 };
