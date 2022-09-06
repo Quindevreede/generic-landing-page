@@ -48,7 +48,11 @@ function Tours() {
     }
     return (
         <main id="tours">
+            <section className="outer-content-container">
+                <div className="inner-content-container">
             <MultipleTours tours={tours} removeTour={removeTour} />
+                </div>
+            </section>
         </main>
     )
 }

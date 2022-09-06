@@ -1,25 +1,14 @@
 .tours__main__container {
     width: 90vw;
-    max-width: 620px;
+    max-width: 520px;
     margin: 5rem auto;
 }
 .loading {
     text-align: center;
 }
-.title {
-    text-align: center;
-    margin-bottom: 4rem;
-}
-.underline {
-    width: 6rem;
-    height: 0.25rem;
-    background: var(--color-text);
-    margin-left: auto;
-    margin-right: auto;
-}
 
 .single-tour {
-    min-width: 400px;
+    min-width: 300px;
     min-height: 600px;
     background: white;
     border-radius: 0.25rem;
@@ -48,15 +37,7 @@
 .tour-info h4 {
     margin-bottom: 0;
 }
-.single-tour button {
-    background: transparent;
-    border-color: transparent;
-    text-transform: capitalize;
-    color: var(--color-text);
-    font-size: 1rem;
-    cursor: pointer;
-    padding-left: 0.25rem;
-}
+
 .tour-price {
     color: var(--color-blue);
     background: var(--color-headline);
@@ -71,32 +52,21 @@
 margin-bottom: 20px;
 }
 
-.single-tour .delete-btn {
-    display: block;
-    width: 150px;
-    margin: 1rem auto 0 auto;
-    color: var(--color-headline);
-    background: var(--color-blue);
-    border: 1px solid var(--color-bg);
-    padding: 0.25rem 0.5rem;
-    border-radius: 1rem;
-    position: absolute;
-    left:    20px;
-    bottom:   20px;
-}
-
-
-@media screen and (min-width: 750px) and (max-width: 1049px){
+@media screen and (min-width: 750px) and (max-width: 1050px) {
     .tour-container {
         flex: 1;
-        display:grid;
+        display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-gap: 4rem;
+        grid-gap: 2rem;
         margin-left: -15px;
+    }
+
+    .single-tour {
+        min-width: 280px;
     }
 }
 
-@media screen and (min-width: 1050px) {
+@media screen and (min-width: 1050px) and (max-width: 1400px) {
     .tour-container {
         flex: 1;
         display:grid;
@@ -104,5 +74,25 @@ margin-bottom: 20px;
         grid-gap: 4rem;
         margin-left: -5px;
     }
+
+    .single-tour {
+        min-width: 300px;
+    }
+
 }
 
+@media screen and (min-width: 1400px) {
+
+    .tour-container {
+        flex: 1;
+        display:grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 2rem;
+        margin-left: -5px;
+    }
+
+    .single-tour {
+        min-width: 250px;
+    }
+
+}

@@ -7,9 +7,12 @@ function List() {
     return (
         <section className="outer-content-container">
             <div className="inner-content-container">
+                <div className="title">
+                    <h2>RANDOM LIST</h2>
+                    <div className="underline"></div>
+                </div>
         <main className="list-top">
             <section className='list__container'>
-                <h1>A RANDOM LIST :</h1>
                 <ListComponent />
             </section>
         </main>

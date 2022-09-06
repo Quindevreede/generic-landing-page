@@ -4,12 +4,9 @@ import SingleTour from './SingleTour';
 
 function MultipleTours({ tours, removeTour }) {
     return (
-
-        <section className="outer-content-container">
-            <div className="inner-content-container">
     <section>
       <div className="title">
-        <h2>our tours</h2>
+        <h2>OUR TOURS</h2>
         <div className="underline"></div>
       </div>
       <div className="tour-container">
@@ -18,8 +15,6 @@ function MultipleTours({ tours, removeTour }) {
         })}
       </div>
     </section>
-            </div>
-        </section>
   );
 };
 

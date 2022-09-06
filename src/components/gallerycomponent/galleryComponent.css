@@ -1,0 +1,47 @@
+.gallery-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 350px;
+    background: var(--gradient-bar);
+    padding: 30px;
+    margin: 30px auto;
+    border-radius: 0.25rem;
+}
+
+.gallery-top Button {
+    padding: 10px;
+}
+
+.art-img__container {
+    color: var(--color-text);
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.art-img__container img {
+    width: 275px;
+    height: 275px;
+    border-radius: 3%;
+    margin-bottom: 15px;
+    padding: 1px;
+    box-shadow: 0 5px 15px var(--color-bg);
+}
+
+.art--text {
+    color: var(--color-text);
+    text-transform: uppercase;
+}
+
+.art-button__container {
+    color: var(--color-text);
+    text-transform: uppercase;
+}
+
+.art-button__container Button {
+    margin: 10px;
+    padding: 5px;
+    background: transparent;
+    border-color: transparent;
+}

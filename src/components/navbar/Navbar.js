@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import { RiMenu3Line, RiCloseLine} from "react-icons/ri";
 import './navbar.css';
+import Button from "../button/Button";
 
 function Navbar() {
     const [toggleMenu, setToggleMenu] = useState(false);
@@ -20,8 +21,12 @@ function Navbar() {
                 </div>
             </div>
             <div className="navbar__sign-container">
-                <p>Sign in</p>
-                <button type="button">Sign up</button>
+                <p>SIGN IN</p>
+                <Button
+                    type="button"
+                    buttonStyle="btn--navbar"
+                    buttonSize="btn--large">SIGN UP
+                </Button>
             </div>
             <div className="navbar__menu-top">
                 {toggleMenu
@@ -38,8 +43,11 @@ function Navbar() {
                         </div>
                         <div className="navbar__menu-container__links__sign">
                             <p>Sign in</p>
-                            <button type="button">Sign up</button>
-                        </div>
+                            <Button
+                                type="button"
+                                buttonStyle="btn--navbar"
+                                buttonSize="btn--large">SIGN UP
+                            </Button>                        </div>
                     </div>
                 )}
             </div>

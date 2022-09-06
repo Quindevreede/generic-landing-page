@@ -1,10 +1,11 @@
 import React from 'react';
 import './listComponent.css';
-import './data';
-import data from "./data";
+import './dataList';
+import dataList from "./dataList";
+import Button from "../button/Button";
 
 function ListComponent() {
-    const [list, setList] = React.useState(data);
+    const [list, setList] = React.useState(dataList);
 
     function handleRemove(id) {
         const newList = list.filter((item) => item.id !== id);
@@ -25,9 +26,13 @@ function ListComponent() {
                             <div className="person__details__container-text">
                             <h4>NAME: {item.name}</h4>
                             <p>AGE: {item.age}</p>
-                            <button type="button" className="list--button" onClick={() => handleRemove(item.id)}>
+                                <Button
+                                    type="button"
+                                    buttonStyle="btn--list"
+                                    buttonSize="btn--small"
+                                    className="list--button" onClick={() => handleRemove(item.id)}>
                                 Remove
-                            </button>
+                            </Button>
                         </div>
                         </div>
                     ))}

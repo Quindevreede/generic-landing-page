@@ -3,6 +3,7 @@
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
+  font-family: 'Manrope', sans-serif;
 }
 
 body {
@@ -30,33 +31,6 @@ h4 {
 
 ul {
   list-style-type: none;
-}
-
-.gradient__bg {
-  /* ff 3.6+ */
-  background:-moz-linear-gradient(90deg, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
-
-  /* safari 5.1+,chrome 10+ */
-  background:-webkit-linear-gradient(90deg, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
-
-  /* opera 11.10+ */
-  background:-o-linear-gradient(90deg, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
-
-  /* ie 6-9 */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#040C18', endColorstr='#002853', GradientType=0 );
-
-  /* ie 10+ */
-  background:-ms-linear-gradient(90deg, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
-
-  /* global 94%+ browsers support */
-  background:linear-gradient(90deg, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
-}
-
-.gradient__text {
-  background: var(--gradient-text);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .section__padding {
@@ -96,6 +70,41 @@ Re-Useables
   justify-content: center;
   text-align: center;
   position: relative;
+}
+
+.title {
+  background: var(--gradient-text);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.underline {
+  width: 6rem;
+  height: 0.25rem;
+  background: var(--color-text);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gradient__bg {
+  /* ff 3.6+ */
+  background:-moz-linear-gradient(90deg, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+
+  /* safari 5.1+,chrome 10+ */
+  background:-webkit-linear-gradient(90deg, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+
+  /* opera 11.10+ */
+  background:-o-linear-gradient(90deg, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+
+  /* ie 6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#040C18', endColorstr='#002853', GradientType=0 );
+
+  /* ie 10+ */
+  background:-ms-linear-gradient(90deg, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+
+  /* global 94%+ browsers support */
+  background:linear-gradient(90deg, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
 }
 
 @-webkit-keyframes scale-up-center {

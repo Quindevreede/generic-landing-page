@@ -34,18 +34,6 @@
     width: 20px;
 }
 
-.list--button {
-    color: var(--color-headline);
-    width: 70px;
-    padding: 5px;
-    font-size: 13px;
-    border: none;
-    background: var(--color-text);
-    margin: 1rem auto 0 auto;
-    border-radius: 0.25rem;
-    cursor: pointer;
-}
-
 .list--clear-button {
     color: var(--color-headline);
     width: 100px;
@@ -62,9 +50,18 @@
         flex: 1;
         display:grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-gap: 4rem;
+        grid-gap: 2rem;
         margin-left: -15px;
     }
+
+    .person__details__container {
+        margin-bottom: 0px;
+    }
+
+    .list--clear-button {
+        margin-top: 40px;
+    }
+
 }
 
 @media screen and (min-width: 1050px) {
@@ -75,5 +72,14 @@
         grid-gap: 4rem;
         margin-left: -5px;
     }
+
+    .person__details__container {
+        margin-bottom: 0px;
+    }
+
+    .list--clear-button {
+        margin-top: 40px;
+    }
+
 }
 

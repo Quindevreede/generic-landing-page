@@ -4,17 +4,13 @@
     align-items: flex-start;
     flex-direction: column;
     width: 90vw;
-    margin: 1rem 0;
+    margin: 2rem 0;
     background: linear-gradient(103.22deg, #81AFDD -13.86%, #042c54 99.55%);
     border-radius: 0.25rem;
     padding: 1.5rem 2rem;
     box-shadow: 0 5px 25px #042c54;
     z-index: 0;
     position: relative;
-}
-
-.list__container h1 {
-    color: var(--color-headline);
 }
 
 .list__container h3 {
@@ -25,11 +21,11 @@
 
 @media screen and (min-width: 750px) and (max-width: 1049px){
 
-.list__container {
-    max-width: 700px;
-    z-index: 2;
-    position: relative;
-}
+    .list__container {
+        max-width: 700px;
+        z-index: 2;
+        position: relative;
+    }
 
 }
 
@@ -40,6 +36,7 @@
         z-index: 3;
         position: relative;
     }
+
 }
 
 

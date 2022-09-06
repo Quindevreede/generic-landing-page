@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './tours.css';
+import Button from "../button/Button";
 
 function SingleTour({ id, image, info, name, price, removeTour })  {
   const [readMore, setReadMore] = useState(false);
@@ -13,13 +14,20 @@ function SingleTour({ id, image, info, name, price, removeTour })  {
         </div>
         <p className="read-more">
           {readMore ? info : `${info.substring(0, 200)}...`}
-          <button onClick={() => setReadMore(!readMore)}>
+          <Button
+              type="button"
+              onClick={() => setReadMore(!readMore)}>
             {readMore ? 'show less' : '  read more'}
-          </button>
+          </Button>
         </p>
-        <button className="delete-btn" onClick={() => removeTour(id)}>
+        <Button
+          type="button"
+          buttonStyle="btn--tours"
+          buttonSize="btn--medium"
+          className="delete--btn"
+          onClick={() => removeTour(id)}>
           not interested
-        </button>
+        </Button>
       </footer>
     </article>
   );
