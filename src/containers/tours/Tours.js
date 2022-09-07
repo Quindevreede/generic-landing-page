@@ -37,12 +37,16 @@ function Tours() {
     if (tours.length === 0) {
         return (
             <main className="tours__main__container">
+                <section className="outer-content-container">
+                    <div className="inner-content-container">
                 <div>
                     <h2>no tours left</h2>
                     <button className='btn' onClick={() => fetchTours()}>
                         refresh
                     </button>
                 </div>
+                    </div>
+                </section>
             </main>
         )
     }

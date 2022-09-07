@@ -7,11 +7,16 @@
 }
 
 body {
-  background: var(--color-bg);
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background: var(--color-background);
 }
 
 p {
   font-family: 'Manrope', sans-serif;
+  color: var(--color-text);
+  text-transform: capitalize;
 }
 
 a {
@@ -24,26 +29,13 @@ h2,
 h3,
 h4 {
   font-family: 'Manrope', sans-serif;
-  text-transform: capitalize;
   line-height: 1.25;
-  margin-bottom: 0.75rem;
+  margin-bottom: 15px;
+  color: var(--color-header-text);
 }
 
 ul {
   list-style-type: none;
-}
-
-.section__padding {
-  padding: 4rem 6rem;
-}
-
-.section__margin {
-  margin: 4rem 6rem;
-}
-
-.scale-up-center {
-  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-  animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
 /*
@@ -80,31 +72,31 @@ Re-Useables
 }
 
 .underline {
-  width: 6rem;
-  height: 0.25rem;
-  background: var(--color-text);
+  width: 90px;
+  height: 5px;
+  background: var(--color-blue-dark);
   margin-left: auto;
   margin-right: auto;
 }
 
 .gradient__bg {
   /* ff 3.6+ */
-  background:-moz-linear-gradient(90deg, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+  background:-moz-linear-gradient(90deg, #e8f9fd 0%, #b9edf9 100%);
 
   /* safari 5.1+,chrome 10+ */
-  background:-webkit-linear-gradient(90deg, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+  background:-webkit-linear-gradient(90deg, #e8f9fd 0%, #b9edf9 100%);
 
   /* opera 11.10+ */
-  background:-o-linear-gradient(90deg, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+  background:-o-linear-gradient(90deg, #e8f9fd 0%, #b9edf9 100%);
 
   /* ie 6-9 */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#040C18', endColorstr='#002853', GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8f9fd', endColorstr='#b9edf9', GradientType=0 );
 
   /* ie 10+ */
-  background:-ms-linear-gradient(90deg, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+  background:-ms-linear-gradient(90deg, #e8f9fd 0%, #b9edf9 100%);
 
   /* global 94%+ browsers support */
-  background:linear-gradient(90deg, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+  background:linear-gradient(90deg, #e8f9fd 0%, #b9edf9 100%);
 }
 
 @-webkit-keyframes scale-up-center {
@@ -126,25 +118,5 @@ Re-Useables
   100% {
     -webkit-transform: scale(1);
     transform: scale(1);
-  }
-}
-
-@media screen and (max-width: 700px) {
-  .section__padding {
-    padding: 4rem;
-  }
-
-  .section__margin {
-    margin: 4rem;
-  }
-}
-
-@media screen and (max-width: 550px) {
-  .section__padding {
-    padding: 4rem 2rem;
-  }
-
-  .section__margin {
-    margin: 4rem 2rem;
   }
 }

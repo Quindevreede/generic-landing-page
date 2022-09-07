@@ -6,11 +6,13 @@ import { Footer } from "./components";
 import { List } from './containers';
 import { Tours } from './containers';
 import { Gallery } from './containers';
+import { Faq } from "./containers";
+import { Top10 } from "./containers";
 
 function App() {
   return (
       <>
-      <div className="App">
+      <div>
           <div className="gradient__bg">
               <Navbar />
           </div>
@@ -19,6 +21,8 @@ function App() {
               <Tours />
           </div>
           <Gallery />
+          <Top10 />
+          <Faq />
       </div>
           <Footer />
       </>

@@ -1,5 +1,5 @@
 import React from 'react';
-import GalleryComponent from '../../components/gallerycomponent/GallleryComponent';
+import GalleryComponent from '../../components/gallerycomponent/GalleryComponent';
 
 function Gallery() {
     return (

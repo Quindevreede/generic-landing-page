@@ -3,15 +3,19 @@
 :root {
   --font-family: 'Manrope', sans-serif;
 
-  --gradient-text: linear-gradient(89.97deg, white 5.84%, #81AFDD 92.67%);
-  --gradient-bar: linear-gradient(103.22deg, #024ec9 -13.86%, #042c54 99.55%);
+  --gradient-text: linear-gradient(89.97deg, #b9edf9 10%, #0a6275 92.67%);
+  --gradient-bar: linear-gradient(3.22deg, #ffffff -23%, #b9edf9 39%);
 
-  --color-bg: #040C18;
-  --color-footer : #031B34;
-  --color-blog: #042c54;
-  --color-blue: #024ec9;
-  --color-headline: white;
-  --color-text: #81AFDD;
-  --color-subtext: #FF8A71;
+  --color-background: #ffffff;
+  --color-boxshadow: grey;
+
+  --color-blue-light: #e8f9fd;
+  --color-blue-medium: #b9edf9;
+  --color-blue-dark: #12b0d3;
+  --color-blue-darker: #0a6275;
+  --color-blue-darkest: #063b46;
+
+  --color-text: #0a6275;
+  --color-header-text: #12b0d3;
 
 }

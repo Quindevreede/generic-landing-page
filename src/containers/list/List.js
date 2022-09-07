@@ -11,8 +11,8 @@ function List() {
                     <h2>RANDOM LIST</h2>
                     <div className="underline"></div>
                 </div>
-        <main className="list-top">
-            <section className='list__container'>
+        <main className="list-top__container">
+            <section className='list-content__container'>
                 <ListComponent />
             </section>
         </main>
