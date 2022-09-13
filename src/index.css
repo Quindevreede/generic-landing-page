@@ -4,6 +4,7 @@
   --font-family: 'Manrope', sans-serif;
 
   --gradient-text: linear-gradient(89.97deg, #b9edf9 10%, #0a6275 92.67%);
+  --gradient-button: linear-gradient(-3.97deg, #b9edf9 10%, #12b0d3 130.67%);
   --gradient-bar: linear-gradient(3.22deg, #ffffff -23%, #b9edf9 39%);
 
   --color-background: #ffffff;
@@ -11,11 +12,16 @@
 
   --color-blue-light: #e8f9fd;
   --color-blue-medium: #b9edf9;
-  --color-blue-dark: #12b0d3;
+  --color-blue-medium-dark: #12b0d3;
+  --color-blue-dark: #0e89a4;
   --color-blue-darker: #0a6275;
   --color-blue-darkest: #063b46;
 
+  --color-complementary-medium: #ffd2c2;
+  --color-complementary-dark: #ffa280;
+  --color-complementary-darkest:#ff6933;
+
   --color-text: #0a6275;
-  --color-header-text: #12b0d3;
+  --color-header-text: #0e89a4;
 
 }

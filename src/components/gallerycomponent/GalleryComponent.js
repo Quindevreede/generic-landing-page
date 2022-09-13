@@ -41,30 +41,31 @@ function GalleryComponent() {
     };
 
     return (
-        <article className='gallery-top'>
-            <div className='art-img__container'>
-                <img src={image} alt={title} className='art-img-image' />
+        <article className='gallery-component__container'>
+            <div className='gallery-img__container'>
+                <img src={image} alt={title} className='gallery-img' />
+            </div>
+            <section className='gallery-component-content__container'>
+            <div className='gallery-title__container'>
                 <p>{title}</p>
                 <p>{year}</p>
             </div>
-            <p className='art--text'>{text}</p>
-            <div className='art-button__container'>
-                PREV
+            <p className='gallery--text'>{text}</p>
+            <div className='gallery-button__container'>
                 <Button
-                    buttonStyle="btn--list"
-                    buttonSize="btn--small"
+                    buttonStyle="btn--gallery"
+                    buttonSize="btn--medium"
                     className="list--button"
                     onClick={prevPerson}>
-                    <FaChevronLeft />
+                    PREV <FaChevronLeft />
                 </Button>
                 <Button
-                    buttonStyle="btn--list"
-                    buttonSize="btn--small"
+                    buttonStyle="btn--gallery"
+                    buttonSize="btn--medium"
                     className="list--button"
                     onClick={nextPerson}>
-                    <FaChevronRight />
+                    <FaChevronRight /> NEXT
                 </Button>
-                NEXT
             </div>
             <Button
                 buttonStyle="btn--list"
@@ -73,6 +74,7 @@ function GalleryComponent() {
                 onClick={randomPerson}>
                 RANDOM ARTWORK
             </Button>
+            </section>
         </article>
     );
 };

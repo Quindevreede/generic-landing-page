@@ -17,13 +17,13 @@ function ListComponent() {
         <>
             <h3><strong>{list.length}</strong> PEOPLE IN LIST</h3>
 
-            <article className='person__container'>
+            <article className='list-component__container'>
                     {list.map((item) => (
-                        <div className="person__details__container" key={item.id}>
-                            <div className="person__details__container-img">
+                        <div className="list-component-content__container" key={item.id}>
+                            <div className="list-component-content--img">
                             <img src={item.image} alt={item.name} />
                             </div>
-                            <div className="person__details__container-text">
+                            <div className="list-component-content--text">
                             <h4>NAME: {item.name}</h4>
                             <p>AGE: {item.age}</p>
                                 <Button
@@ -31,14 +31,14 @@ function ListComponent() {
                                     buttonStyle="btn--list"
                                     buttonSize="btn--small"
                                     className="list--button" onClick={() => handleRemove(item.id)}>
-                                Remove
+                                REMOVE
                             </Button>
                         </div>
                         </div>
                     ))}
                 </article>
 
-            <button className="list--clear-button" onClick={() => setList([])}>clear all</button>
+            <button className="btn--list-clear" onClick={() => setList([])}>clear all</button>
 
         </>
     );

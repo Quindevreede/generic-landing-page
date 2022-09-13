@@ -1,21 +1,21 @@
 import React, { useState } from 'react';
 import './faqComponent.css';
-import { AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai';
+import { AiFillCaretDown, AiFillCaretUp } from 'react-icons/ai';
 
 function FaqComponent({ title, info }) {
     const [showInfo, setShowInfo] = useState(false);
 
     return (
-        <article className='question'>
-            <header>
+        <article className='single-question__container'>
+            <div className='single-question--content__container'>
                 <h4>{title}</h4>
                 <button className='question-btn' onClick={() => setShowInfo(!showInfo)}>
-                    {showInfo ? <AiOutlineMinus /> : <AiOutlinePlus />}
+                    {showInfo ? <AiFillCaretUp /> : <AiFillCaretDown />}
                 </button>
-            </header>
+            </div>
             {showInfo && <p>{info}</p>}
         </article>
     );
-};
+}
 
 export default FaqComponent;

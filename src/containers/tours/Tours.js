@@ -1,13 +1,15 @@
 import React, { useEffect, useState } from 'react';
+import './tours.css';
 import Loading from '../../components/loading/Loading'
 import MultipleTours from '../../components/tour/MultipleTours'
+import Button from "../../components/button/Button";
 const url = 'https://course-api.com/react-tours-project'
 
 function Tours() {
     const [loading, setLoading] = useState(true)
     const [tours, setTours] = useState([])
 
-    const removeTour = (id) => {
+    function removeTour(id) {
         const newTours = tours.filter((tour) => tour.id !== id)
         setTours(newTours)
     }
@@ -24,6 +26,7 @@ function Tours() {
             console.log(error)
         }
     }
+
     useEffect(() => {
         fetchTours()
     }, [])
@@ -34,26 +37,40 @@ function Tours() {
             </main>
         )
     }
+
     if (tours.length === 0) {
         return (
-            <main className="tours__main__container">
                 <section className="outer-content-container">
                     <div className="inner-content-container">
-                <div>
-                    <h2>no tours left</h2>
-                    <button className='btn' onClick={() => fetchTours()}>
-                        refresh
-                    </button>
-                </div>
-                    </div>
-                </section>
-            </main>
-        )
+                        <div className="title">
+                            <h2>OUR TOURS</h2>
+                            <div className="underline"></div>
+                        </div>
+                        <div className='tours-empty__container'>
+                            <div>
+                                <h2>NO TOURS LEFT</h2>
+                                <Button
+                                    type="button"
+                                    buttonStyle='btn--refresh'
+                                    buttonSize="btn--medium"
+                                    onClick={() => fetchTours()}>
+                                    REFRESH
+                                </Button>
+                            </div>
+                        </div>
+                        </div>
+                    </section>
+    )
     }
+
     return (
         <main id="tours">
             <section className="outer-content-container">
                 <div className="inner-content-container">
+                    <div className="title">
+                        <h2>TOUR</h2>
+                        <div className="underline"></div>
+                    </div>
             <MultipleTours tours={tours} removeTour={removeTour} />
                 </div>
             </section>

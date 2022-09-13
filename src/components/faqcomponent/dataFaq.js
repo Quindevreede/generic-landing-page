@@ -1,33 +1,33 @@
 const questions = [
     {
         id: 1,
-        title: 'Do I have to allow the use of cookies?',
+        title: 'Does this page only contain lists?',
         info:
-            'Unicorn vinyl poutine brooklyn, next level direct trade iceland. Shaman copper mug church-key coloring book, whatever poutine normcore fixie cred kickstarter post-ironic street art.',
+            'Yes, 5 different types of lists to show interested parties that I have experience in building them',
     },
     {
         id: 2,
-        title: 'How do I change my My Page password?',
+        title: 'The topics of these lists seem kind of random?',
         info:
-            'Coloring book forage photo booth gentrify lumbersexual. Migas chillwave poutine synth shoreditch, enamel pin thundercats fashion axe roof party polaroid chartreuse.',
+            'The topics are based on different hobbies and interests that I have, I tried to match the hobby on the type of list',
     },
     {
         id: 3,
-        title: 'What is BankID?',
+        title: 'Is it possible to see other kinds of programming?',
         info:
-            'Enamel pin fam sustainable woke whatever venmo. Authentic asymmetrical put a bird on it, lumbersexual activated charcoal kinfolk banjo cred pickled sartorial.',
+            'Of course, There will be links to other apps where I would love to show you my other programming skills',
     },
     {
         id: 4,
-        title: 'Whose birth number can I use?',
+        title: 'Is it possible to test further skills via e.g. an assessment?',
         info:
-            'Edison bulb direct trade gentrify beard lo-fi seitan sustainable roof party franzen occupy squid. Knausgaard cronut succulents, scenester readymade shabby chic lyft. Copper mug meh vegan gentrify.',
+            'Absolutely, I welcome any chance to exhibit the different abilities that I have picked up on programming',
     },
     {
         id: 5,
-        title: 'When do I recieve a password ordered by letter?',
+        title: 'What are the options to contact the programmer of this app?',
         info:
-            'Locavore franzen fashion axe live-edge neutra irony synth af tilde shabby chic man braid chillwave waistcoat copper mug messenger bag. Banjo snackwave blog, microdosing thundercats migas vaporware viral lo-fi seitan ',
+            'Please contact me by email or phone if there are any questions. The email address and phone number are included in our previous communication',
     },
 ]
 export default questions

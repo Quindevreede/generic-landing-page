@@ -6,6 +6,10 @@ const buttonStyles = [
     "btn--navbar",
     "btn--list",
     "btn--tours",
+    "btn--refresh",
+    "btn--read-more",
+    "btn--gallery",
+    "btn--top10-category"
 ]
 
 const buttonSizes = [

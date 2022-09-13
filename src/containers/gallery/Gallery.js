@@ -6,9 +6,9 @@ function Gallery() {
         <main>
             <section className="outer-content-container">
                 <div className="inner-content-container">
-            <section className='container'>
+            <section className='gallery-top__container'>
                 <div className='title'>
-                    <h2>our reviews</h2>
+                    <h2>GALLERY</h2>
                     <div className='underline'></div>
                 </div>
                 <GalleryComponent />

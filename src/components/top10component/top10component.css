@@ -1,29 +1,118 @@
-.top10-top {
-    width: 90vw;
-    margin: 0 auto;
-    max-width: 1170px;
-    display: grid;
-    gap: 3rem 2rem;
-    justify-items: center;
+.top10-component__container--even {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.top10-component__container {
-    display: grid;
-    gap: 1rem 2rem;
-    max-width: 25rem;
+.top10-component__container--odd {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .top10--image {
-    object-fit: cover;
-    height: 200px;
-    width: 100%;
-    border: 0.25rem solid var(--color-blog);
+    width: 200px;
     border-radius: 16px;
-    display: block;
 }
 
-.videogame-info__container header {
+.videogame-info__container {
     display: flex;
-    justify-content: space-between;
-    border-bottom: 0.5px dotted var(--color-blue);
+    flex-direction: column;
+    width: 300px;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+
+.videogame-info__container p {
+    padding: 7px 5px 20px 15px;
+}
+
+.videogame-info__container--header {
+    width: 300px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.videogame-info__container-dots {
+    opacity: 50%;
+    width: 50px;
+    border-bottom: 5px dashed var(--color-blue-medium-dark);
+    margin-left: calc(50% - 20px);
+}
+
+.top10-category-btn__container {
+    margin: 40px auto 0 auto;
+}
+
+.btn--top10-category {
+    opacity: 50%;
+    color: var(--color-blue-light);
+    border: 3px solid var(--color-blue-dark);
+    background: var(--color-blue-dark);
+    margin: 5px 5px 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+@media screen and (min-width: 500px) and (max-width: 749px){
+
+    .top10-component__container--even {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .top10-component__container--odd {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+}
+
+@media screen and (min-width: 750px) and (max-width: 1049px){
+
+    .top10-component__container--even {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .top10-component__container--odd {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+}
+
+@media screen and (min-width: 1050px) {
+
+    .top10-component__container--even {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin: 25px 40px 25px 0;
+    }
+
+    .top10-component__container--odd {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin: 25px 40px 25px 0;
+    }
+
+    .top10--image {
+        width: 400px;
+        margin: 0 30px;
+    }
+
 }

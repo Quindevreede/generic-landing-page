@@ -9,9 +9,11 @@ function Faq() {
     return (
         <section className="outer-content-container">
             <div className="inner-content-container">
-        <main className='faq-top'>
-            <div className='faq__container'>
-                <h3>questions and answers about login</h3>
+                <div className="title">
+                    <h2>FAQs</h2>
+                    <div className="underline"></div>
+                </div>
+            <div className='faq-top__container'>
                 <section className='info'>
                     {questions.map((question) => {
                         return (
@@ -20,7 +22,6 @@ function Faq() {
                     })}
                 </section>
             </div>
-        </main>
                 </div>
             </section>
     );

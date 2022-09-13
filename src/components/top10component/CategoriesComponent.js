@@ -1,18 +1,19 @@
 import React from 'react';
+import Button from "../button/Button";
 
 function CategoriesComponent({ categories, filterItems }) {
     return (
-        <div className="btn-container">
+        <div className="top10-category-btn__container">
             {categories.map((category, index) => {
                 return (
-                    <button
+                    <Button
                         type="button"
-                        className="filter-btn"
+                        buttonStyle='btn--top10-category'
                         key={index}
                         onClick={() => filterItems(category)}
                     >
                         {category}
-                    </button>
+                    </Button>
                 );
             })}
         </div>

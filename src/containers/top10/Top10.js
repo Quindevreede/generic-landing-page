@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './top10.css';
 import Menu from '../../components/top10component/Top10Component';
 import Categories from '../../components/top10component/CategoriesComponent';
 import items from '../../components/top10component/DataTop10';
@@ -21,14 +22,16 @@ function Top10() {
         <main>
             <section className="outer-content-container">
                 <div className="inner-content-container">
-            <section className="menu section">
                 <div className="title">
-                    <h2>our menu</h2>
+                    <h2>CHART</h2>
                     <div className="underline"></div>
                 </div>
+                    <div className='top10-top__container'>
                 <Categories categories={categories} filterItems={filterItems} />
+                        <div className='top10-content__container'>
                 <Menu items={menuItems} />
-            </section>
+                    </div>
+                </div>
                 </div>
             </section>
         </main>

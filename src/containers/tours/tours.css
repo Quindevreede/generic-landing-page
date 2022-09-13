@@ -1,0 +1,18 @@
+.tours-empty__container {
+    height: 300px;
+    padding: 50px 0;
+}
+
+.btn--refresh {
+    display: block;
+    width: 120px;
+    margin: 15px auto 0 auto;
+    color: var(--color-blue-medium);
+    background: var(--color-blue-medium-dark);
+    border: none;
+}
+
+.btn--refresh:hover {
+    width: 130px;
+    color: var(--color-background);
+}

@@ -7,7 +7,7 @@ function Navbar() {
     const [toggleMenu, setToggleMenu] = useState(false);
 
     return (
-        <div className="navbar-top__container">
+        <div className="navbar-top__container sticky">
             <div className="navbar-content__container">
                 <div className="navbar-logo__container">
                     <h2 className="navbar-logo">MULTI APP</h2>
@@ -20,18 +20,17 @@ function Navbar() {
                     <p><a href="#part 5">PART 5</a></p>
                 </div>
             </div>
-            <div className="navbar-sign__container">
-                <p>SIGN IN</p>
+            <div className="navbar-home__container">
                 <Button
                     type="button"
                     buttonStyle="btn--navbar"
-                    buttonSize="btn--large">SIGN UP
+                    buttonSize="btn--large">HOME
                 </Button>
             </div>
             <div className="navbar-menu-top__container">
                 {toggleMenu
-                    ? <RiCloseLine color="#fff" size={27} onClick={() => setToggleMenu(false)} />
-                    : <RiMenu3Line color="#fff" size={27} onClick={() => setToggleMenu(true)} />}
+                    ? <RiCloseLine color="#12b0d3" size={27} onClick={() => setToggleMenu(false)} />
+                    : <RiMenu3Line color="#12b0d3" size={27} onClick={() => setToggleMenu(true)} />}
                 {toggleMenu && (
                     <div className="navbar-menu__container scale-up-center">
                         <div className="navbar-menu-links__container">
@@ -40,14 +39,6 @@ function Navbar() {
                             <p><a href="#part 3">PART 3</a></p>
                             <p><a href="#part 4">PART 4</a></p>
                             <p><a href="#part 5">PART 5</a></p>
-                        </div>
-                        <div className="navbar-menu-links-sign__container">
-                            <p>SIGN IN</p>
-                            <Button
-                                type="button"
-                                buttonStyle="btn--navbar"
-                                buttonSize="btn--large">SIGN UP
-                            </Button>
                         </div>
                     </div>
                 )}

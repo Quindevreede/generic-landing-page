@@ -21,7 +21,9 @@ function App() {
               <Tours />
           </div>
           <Gallery />
+          <div className="gradient__bg">
           <Top10 />
+          </div>
           <Faq />
       </div>
           <Footer />

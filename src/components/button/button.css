@@ -11,48 +11,8 @@
     border-color: transparent;
     text-transform: capitalize;
     color: var(--color-text);
-    font-size: 1rem;
+    font-size: 15px;
     cursor: pointer;
-    padding-left: 0.25rem;
-}
-
-.btn--navbar {
-    color: #fff;
-    background: var(--color-blue);
-    font-family: var(--font-family);
-    font-weight: 500;
-    line-height: 25px;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.btn--navbar:hover {
-    background-color: var(--color-text);
-    transition: 0.7s;
-}
-
-.btn--list {
-    color: var(--color-headline);
-    border: none;
-    background: var(--color-text);
-    margin: 1rem auto 0 auto;
-    border-radius: 0.25rem;
-    cursor: pointer;
-}
-
-.btn--tours {
-    display: block;
-    width: 150px;
-    margin: 1rem auto 0 auto;
-    color: var(--color-headline);
-    background: var(--color-blue);
-    border: 1px solid var(--color-bg);
-    border-radius: 1rem;
-    position: absolute;
-    left: calc(50% - 74px);
-    bottom:   3%;
 }
 
 .btn--small {
