@@ -4,11 +4,13 @@ import "./button.css";
 const buttonStyles = [
     "btn--default",
     "btn--navbar",
-    "btn--list",
+    "btn--people-remove",
+    "btn--people-clear",
     "btn--tours",
     "btn--refresh",
     "btn--read-more",
     "btn--gallery",
+    "btn--gallery-random",
     "btn--top10-category"
 ]
 

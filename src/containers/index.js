@@ -1,4 +1,4 @@
-export { default as List } from './list/List';
+export { default as List } from './people/People';
 export { default as Tours } from './tours/Tours';
 export { default as Gallery } from './gallery/Gallery';
 export { default as Faq } from './faq/Faq';

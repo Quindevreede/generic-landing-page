@@ -99,7 +99,7 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-start;
-        margin: 25px 40px 25px 0;
+        margin: 25px 70px 50px 0;
     }
 
     .top10-component__container--odd {
@@ -107,7 +107,7 @@
         flex-direction: row-reverse;
         justify-content: space-between;
         align-items: flex-start;
-        margin: 25px 40px 25px 0;
+        margin: 25px 40px 50px 0;
     }
 
     .top10--image {

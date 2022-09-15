@@ -3,9 +3,11 @@ import "./footer.css";
 
 function Footer() {
     return (
-        <div className="footer">
-            <h1>ⓒ QUIN DE VREEDE</h1>
-        </div>
+    <section className="footer">
+            <div>
+                <h1>ⓒ QUIN DE VREEDE</h1>
+            </div>
+        </section>
     );
 }
 

@@ -1,18 +1,18 @@
 import React from 'react';
+import './gallery.css'
 import GalleryComponent from '../../components/gallerycomponent/GalleryComponent';
 
 function Gallery() {
     return (
-        <main>
+        <main id="gallery">
+            <div className="skewer--top-right"></div>
             <section className="outer-content-container">
                 <div className="inner-content-container">
-            <section className='gallery-top__container'>
                 <div className='title'>
                     <h2>GALLERY</h2>
                     <div className='underline'></div>
                 </div>
                 <GalleryComponent />
-            </section>
                 </div>
             </section>
         </main>

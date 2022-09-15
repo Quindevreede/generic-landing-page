@@ -1,26 +1,26 @@
 import React from 'react'
-import './list.css';
-import { ListComponent } from '../../components';
+import './people.css';
+import { PeopleComponent } from '../../components';
 
-function List() {
+function People() {
 
     return (
+        <main id='people'>
         <section className="outer-content-container">
             <div className="inner-content-container">
-                <div className='list-title__container'>
+                <div className='people-title__container'>
                 <div className="title">
                     <h2>PEOPLE</h2>
                     <div className="underline"></div>
                 </div>
                 </div>
-        <main className="list-top__container">
-            <section className='list-content__container'>
-                <ListComponent />
+            <section className='people-content__container'>
+                <PeopleComponent />
             </section>
-        </main>
             </div>
         </section>
+        </main>
     )
 }
 
-export default List;
+export default People;

@@ -79,6 +79,24 @@ Re-Useables
   margin-right: auto;
 }
 
+.skewer--bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-bottom: 50px solid white;
+  border-left: 100vw solid transparent;
+  z-index: 1;
+}
+
+.skewer--top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top: 50px solid var(--color-background);
+  border-left: 100vw solid transparent;
+  z-index: 1;
+}
+
 .gradient__bg {
   /* ff 3.6+ */
   background:-moz-linear-gradient(90deg, #e8f9fd 0%, #b9edf9 100%);

@@ -1,6 +1,11 @@
+#tour {
+    position: relative;
+    padding: 50px 0 50px 0;
+    margin-top: -30px;
+}
+
 .tours-empty__container {
     height: 300px;
-    padding: 50px 0;
 }
 
 .btn--refresh {
@@ -16,3 +21,4 @@
     width: 130px;
     color: var(--color-background);
 }
+

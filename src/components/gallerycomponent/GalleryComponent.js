@@ -68,8 +68,8 @@ function GalleryComponent() {
                 </Button>
             </div>
             <Button
-                buttonStyle="btn--list"
-                buttonSize="btn--medium"
+                buttonStyle="btn--gallery-random"
+                buttonSize="btn--small"
                 className="random--button"
                 onClick={randomPerson}>
                 RANDOM ARTWORK

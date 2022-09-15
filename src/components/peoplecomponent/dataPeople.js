@@ -1,4 +1,4 @@
-const dataList = [
+const dataPeople = [
   {
     id: 1,
     name: 'Vlad Dracula',
@@ -49,4 +49,4 @@ const dataList = [
   },
 ];
 
-export default dataList;
+export default dataPeople;

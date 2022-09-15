@@ -19,11 +19,12 @@ function Top10() {
     };
 
     return (
-        <main>
+        <main id='top10'>
+            <div className="skewer--top"></div>
             <section className="outer-content-container">
                 <div className="inner-content-container">
                 <div className="title">
-                    <h2>CHART</h2>
+                    <h2>TOP 10</h2>
                     <div className="underline"></div>
                 </div>
                     <div className='top10-top__container'>
@@ -34,6 +35,7 @@ function Top10() {
                 </div>
                 </div>
             </section>
+            <div className="skewer--bottom"></div>
         </main>
     );
 }

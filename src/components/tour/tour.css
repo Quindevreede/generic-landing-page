@@ -11,9 +11,11 @@
     transition: all 0.3s linear;
     position: relative;
 }
+
 .single-tour__container:hover {
     box-shadow: 0 5px 15px var(--color-text);
 }
+
 .single-tour__container img {
     width: 100%;
     height: 300px;
@@ -21,12 +23,14 @@
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
 }
+
 .tour--info {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
 }
+
 .tour--info h4 {
     margin-bottom: 0;
 }
@@ -37,6 +41,7 @@
     padding: 5px 8px;
     border-radius: 15px;
 }
+
 .single-tour__container footer {
     padding: 23px 30px;
 }
@@ -62,7 +67,7 @@
 }
 
 .read-more {
-margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .btn--read-more {

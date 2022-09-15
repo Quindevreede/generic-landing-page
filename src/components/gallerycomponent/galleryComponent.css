@@ -20,6 +20,17 @@
     border-color: transparent;
 }
 
+.btn--gallery-random {
+    display: block;
+    width: 150px;
+    padding: 5px;
+    margin: 15px auto 0 auto;
+    color: var(--color-blue-medium-dark);
+    background: var(--color-blue-medium);
+    border: none;
+    border-radius: 15px;
+}
+
 .gallery-title__container {
     color: var(--color-text);
     font-weight: bold;
@@ -66,8 +77,6 @@
     }
 }
 
-
-
 @media screen and (min-width: 1050px) {
     .gallery-component__container {
         display: flex;
@@ -92,7 +101,6 @@
     .gallery-img__container img {
         width: 500px;
     }
-
 
 }
 

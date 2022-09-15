@@ -9,7 +9,7 @@ const questions = [
         id: 2,
         title: 'The topics of these lists seem kind of random?',
         info:
-            'The topics are based on different hobbies and interests that I have, I tried to match the hobby on the type of list',
+            'The topics are based on different hobbies and interests that I have, I tried to match the hobby on the type of people',
     },
     {
         id: 3,

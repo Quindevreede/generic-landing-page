@@ -40,6 +40,8 @@ function Tours() {
 
     if (tours.length === 0) {
         return (
+            <main id="tour">
+                <div className="skewer--top"></div>
                 <section className="outer-content-container">
                     <div className="inner-content-container">
                         <div className="title">
@@ -60,20 +62,24 @@ function Tours() {
                         </div>
                         </div>
                     </section>
+                <div className="skewer--bottom"></div>
+            </main>
     )
     }
 
     return (
-        <main id="tours">
+        <main id="tour">
+            <div className="skewer--top"></div>
             <section className="outer-content-container">
                 <div className="inner-content-container">
                     <div className="title">
                         <h2>TOUR</h2>
                         <div className="underline"></div>
                     </div>
-            <MultipleTours tours={tours} removeTour={removeTour} />
+                    <MultipleTours tours={tours} removeTour={removeTour} />
                 </div>
             </section>
+            <div className="skewer--bottom"></div>
         </main>
     )
 }

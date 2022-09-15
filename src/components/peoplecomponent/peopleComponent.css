@@ -1,20 +1,20 @@
-.list-component__container {
+.people-component__container {
     width: 40px;
     column-gap: 15px;
     margin-left: 2px;
 }
 
-.list-component__container h4 {
+.people-component__container h4 {
     margin-bottom: 7px;
 }
 
-.list-component-content__container {
+.people-component-content__container {
     display: flex;
     flex-direction: row;
-    margin: 0 10px 30px 20px;
+    margin: 0 10px -10px 20px;
 }
 
-.list-component-content--img img {
+.people-component-content--img img {
     width: 75px;
     height: 75px;
     object-fit: cover;
@@ -23,29 +23,33 @@
     margin-right: 15px;
 }
 
-.list-component-content--text {
+.people-component-content--text {
     display: flex;
     flex-direction: column;
     text-align: left;
     width: 20px;
 }
 
-.btn--list {
-    opacity: 50%;
+.btn--people-remove {
+    position: relative;
+    top: -130px;
+    left: -100px;
+    width: 25px;
+    height: 28px;
     color: var(--color-blue-medium-dark);
     border: 3px solid var(--color-blue-medium);
     background: var(--color-blue-light);
     margin: 15px auto 0 auto;
-    border-radius: 5px;
+    border-radius: 50%;
     cursor: pointer;
 }
 
-.btn--list:hover {
+.btn--people-remove:hover {
     opacity: 100%;
     background: var(--color-blue-medium);
 }
 
-.btn--list-clear {
+.btn--people-clear {
     opacity: 50%;
     color: var(--color-blue-medium-dark);
     width: 100px;
@@ -57,13 +61,13 @@
     cursor: pointer;
 }
 
-.btn--list-clear:hover {
-opacity: 100%;
-background: var(--color-blue-medium);
+.btn--people-clear:hover {
+    opacity: 100%;
+    background: var(--color-blue-medium);
 }
 
 @media screen and (min-width: 500px) and (max-width: 749px){
-    .list-component__container {
+    .people-component__container {
         flex: 1;
         display:grid;
         grid-template-columns: repeat(2, 1fr);
@@ -71,19 +75,19 @@ background: var(--color-blue-medium);
         margin-left: 5px;
     }
 
-    .list-component-content__container {
-        margin-bottom: 0;
+    .people-component-content__container {
         padding-right: 55px;
+        margin-bottom: -40px;
     }
 
-    .btn--list-clear {
+    .btn--people-clear {
         margin-top: 40px;
     }
 
 }
 
 @media screen and (min-width: 750px) and (max-width: 1049px){
-    .list-component__container {
+    .people-component__container {
         flex: 1;
         display:grid;
         grid-template-columns: repeat(3, 1fr);
@@ -91,19 +95,19 @@ background: var(--color-blue-medium);
         margin-left: 5px;
     }
 
-    .list-component-content__container {
-        margin-bottom: 0;
+    .people-component-content__container {
         padding-right: 55px;
+        margin-bottom: -40px;
     }
 
-    .btn--list-clear {
+    .btn--people-clear {
         margin-top: 40px;
     }
 
 }
 
 @media screen and (min-width: 1050px) {
-    .list-component__container {
+    .people-component__container {
         flex: 1;
         display:grid;
         grid-template-columns: repeat(4, 1fr);
@@ -111,12 +115,12 @@ background: var(--color-blue-medium);
         margin-left: -5px;
     }
 
-    .list-component-content__container {
-        margin-bottom: 0px;
+    .people-component-content__container {
         padding-right: 75px;
+        margin-bottom: -40px;
     }
 
-    .btn--list-clear {
+    .btn--people-clear {
         margin-top: 40px;
     }
 

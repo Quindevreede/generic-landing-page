@@ -7,6 +7,7 @@ function Faq() {
     const [questions, setQuestions] = useState(dataFaq);
 
     return (
+        <main id='faq'>
         <section className="outer-content-container">
             <div className="inner-content-container">
                 <div className="title">
@@ -24,6 +25,7 @@ function Faq() {
             </div>
                 </div>
             </section>
+        </main>
     );
 }
 
