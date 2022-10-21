@@ -5,7 +5,8 @@
 .single-tour__container {
     min-height: 600px;
     background: white;
-    border-radius: 5px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
     padding-bottom: 20px;
     box-shadow: 0 1px 15px var(--color-boxshadow);
     transition: all 0.3s linear;
@@ -77,6 +78,7 @@
 }
 
 @media screen and (min-width: 0px) and (max-width: 500px) {
+
     .multiple-tour__container {
         flex: 1;
         display: grid;
@@ -88,9 +90,11 @@
     .single-tour__container {
         min-width: 330px;
     }
+
 }
 
 @media screen and (min-width: 500px) and (max-width: 749px) {
+
     .multiple-tour__container {
         flex: 1;
         display: grid;
@@ -102,9 +106,11 @@
     .single-tour__container {
         min-width: 280px;
     }
+
 }
 
 @media screen and (min-width: 750px) and (max-width: 1050px) {
+
     .multiple-tour__container {
         flex: 1;
         display: grid;
@@ -116,9 +122,11 @@
     .single-tour__container {
         min-width: 330px;
     }
+
 }
 
 @media screen and (min-width: 1050px) and (max-width: 1400px) {
+
     .multiple-tour__container {
         flex: 1;
         display:grid;

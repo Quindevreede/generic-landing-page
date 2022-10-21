@@ -2,12 +2,11 @@ import React from 'react';
 import './app.css';
 
 import { Navbar } from './components';
-import { Footer } from "./components";
-import { List } from './containers';
+import { People } from './containers';
 import { Tours } from './containers';
 import { Gallery } from './containers';
-import { Faq } from "./containers";
-import { Top10 } from "./containers";
+import { MovieList } from "./containers";
+import { Ducklist } from "./containers";
 
 function App() {
   return (
@@ -16,17 +15,16 @@ function App() {
           <div className="gradient__bg">
               <Navbar />
           </div>
-          <List />
+          <People />
           <div className="gradient__bg">
               <Tours />
           </div>
           <Gallery />
           <div className="gradient__bg">
-          <Top10 />
+          <Ducklist />
           </div>
-          <Faq />
+          <MovieList />
       </div>
-          <Footer />
       </>
   );
 }

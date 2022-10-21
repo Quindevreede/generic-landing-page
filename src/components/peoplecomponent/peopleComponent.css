@@ -67,6 +67,7 @@
 }
 
 @media screen and (min-width: 500px) and (max-width: 749px){
+
     .people-component__container {
         flex: 1;
         display:grid;
@@ -87,6 +88,7 @@
 }
 
 @media screen and (min-width: 750px) and (max-width: 1049px){
+
     .people-component__container {
         flex: 1;
         display:grid;

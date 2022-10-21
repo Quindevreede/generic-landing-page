@@ -1,0 +1,68 @@
+#movie {
+    position: relative;
+    padding: 50px 0 50px 0;
+    margin-top: -30px;
+}
+
+.movielist-top__container {
+    height: 500px;
+}
+
+.movie-img__container img {
+    max-width: 300px;
+    margin: 30px 0 30px 0;
+    border-radius: 30px;
+}
+
+.movie-form--input {
+    margin: 10px;
+}
+
+.btn--movie-submit {
+    color: white;
+    background-color: cadetblue;
+    border-radius: 30px;
+    border-color: transparent;
+    margin-bottom: 20px;
+    padding: 3px 5px;
+    letter-spacing: 2px;
+}
+
+.btn--movie-clear {
+    color: cadetblue;
+    border-radius: 30px;
+    border-color: transparent;
+    margin: 20px 0 50px 0;
+    padding: 5px 10px;
+    letter-spacing: 2px;
+}
+
+@media screen and (min-width: 1050px) {
+
+    .movielist-top__container {
+        height: 650px;
+    }
+
+    .movielist__container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .movie-img__container {
+        min-width: 500px;
+        background-color: #01203d;
+        border-radius: 50px;
+        margin: 30px 0 30px 0;
+    }
+
+    .movie-img__container img {
+        min-width: 500px
+    }
+
+    .movielist__container2 {
+        min-width: 250px;
+        margin: 40px 0 0 30px;
+    }
+
+}
+

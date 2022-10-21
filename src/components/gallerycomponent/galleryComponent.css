@@ -51,6 +51,7 @@
 }
 
 @media screen and (min-width: 750px) and (max-width: 1049px){
+
     .gallery-component__container {
         display: flex;
         flex-direction: row;
@@ -75,9 +76,11 @@
     .gallery-img__container {
         width:400px;
     }
+
 }
 
 @media screen and (min-width: 1050px) {
+
     .gallery-component__container {
         display: flex;
         width: 1000px;
