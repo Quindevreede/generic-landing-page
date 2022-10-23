@@ -22,6 +22,7 @@
 .navbar-logo__container {
     display: flex;
     flex-direction: row;
+    padding: 0 0 0 10px;
 }
 
 .navbar-logo__container img {
@@ -33,7 +34,7 @@
     color: var(--color-blue-dark);
     font-weight: bolder;
     font-size: 18px;
-    padding: 5px 0 0 2px;
+    padding: 5px 0 0 5px;
 }
 
 .navbar-logo {
@@ -68,7 +69,7 @@
 }
 
 .navbar-menu-top__container svg {
-    margin-right: 10px;
+    margin-right: 25px;
     cursor: pointer;
 }
 
@@ -80,10 +81,10 @@
     text-align: end;
     background: var(--color-blue-light);
     padding: 8px;
-    margin-right: 20px;
+    margin-right: 0;
     position: absolute;
     right: 0;
-    top: 30px;
+    top: 45px;
     margin-top: 5px;
     border-radius: 5px;
     box-shadow: 0 10px 15px var(--color-boxshadow);

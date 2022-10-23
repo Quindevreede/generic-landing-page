@@ -14,6 +14,7 @@ function Navbar() {
                     <h4><a href="#people">LISTS</a></h4>
                 </div>
                 <div className='navbar-links__container'>
+                    <p><a href='#about'>ABOUT</a></p>
                     <p><a href='#people'>PEOPLE</a></p>
                     <p><a href='#tour'>TOUR</a></p>
                     <p><a href='#gallery'>GALLERY</a></p>
@@ -28,6 +29,7 @@ function Navbar() {
                 {toggleMenu && (
                     <div className='navbar-menu__container scale-up-center'>
                         <div className='navbar-menu-links__container'>
+                            <p><a href='#about'>ABOUT</a></p>
                             <p><a href='#people'>PEOPLE</a></p>
                             <p><a href='#tour'>TOUR</a></p>
                             <p><a href='#gallery'>GALLERY</a></p>

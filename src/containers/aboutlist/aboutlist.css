@@ -1,0 +1,128 @@
+#about {
+    padding: 140px 0 0px 0;
+    margin-top: -50px;
+}
+
+.about-list-title__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-title {
+    background: var(--gradient-text3);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about-list-top__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-list-top__container p {
+    color: var(--color-text);
+    font-family: 'Manrope', sans-serif;
+}
+
+.about-list__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 20px 10px 20px;
+    padding: 30px;
+    background: linear-gradient(90deg, var(--color-blue-light) 0%, var(--color-blue-medium) 100%);
+}
+
+.about-list-header__container {
+    display: flex;
+}
+
+/* Customizing aboutlistcomponent component as per needs */
+.about-list-header__container .about-list-component-top__container {
+    margin: 0;
+}
+
+.about-list-quote__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px 10px 0 10px;
+}
+
+.about-list-quote__container h1 {
+    font-size: 24px;
+    font-weight: 800;
+    font-family: var(--font-family);
+    color: var(--color-blue-green);
+}
+
+.gradient__text2 {
+    background: var(--gradient-text2);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about-list-quote__container p {
+    font-family: var(--font-family);
+    font-weight: 900;
+    font-size: 15px;
+    margin: 20px;
+    color: var(--color-blue-dark);
+}
+
+.about-list-description__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.about-list-description__container .about-list-component-top__container {
+    flex: 1;
+    margin: 15px;
+    min-width: 210px;
+    display: unset;
+    flex-direction: column;
+}
+
+.about-list-description__container .about-list-component-text__container {
+    margin-top: 10px;
+}
+
+@media screen and (min-width: 350px) and (max-width: 600px){
+    .about-list-header__container .about-list-component-top__container {
+        flex-direction: column;
+    }
+
+    .about-list-header__container .about-list-component-text__container {
+        margin-top: 10px;
+    }
+
+    .about-list-quote__container h1 {
+        font-size: 28px;
+        line-height: 40px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .about-list-quote__container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .about-list-quote__container h1 {
+        margin: 25px;
+        max-width: 500px;
+    }
+
+    .about-list-quote__container p {
+        margin-left: 30px;
+        margin-top: 0;
+    }
+}
+
+
+

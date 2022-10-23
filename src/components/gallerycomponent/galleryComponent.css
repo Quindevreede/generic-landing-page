@@ -3,8 +3,8 @@
     width: 100%;
     flex-direction: column;
     justify-content: center;
-    padding: 20px;
-    margin: 20px auto 0 auto;
+    padding: 20px 0 0 0;
+    margin: 20px auto -10px auto;
     border-radius: 5px;
 }
 
@@ -14,7 +14,7 @@
     background: var(--color-blue-light);
     border-radius: 5px;
     cursor: pointer;
-    padding: 0 10px 0 10px;
+    padding: 0 10px;
     margin: 20px 0 0 0;
     background: transparent;
     border-color: transparent;
@@ -58,7 +58,7 @@
         justify-content: center;
         align-items: center;
         padding: 20px 50px;
-        margin: 20px auto 0 auto;
+        margin: 20px auto -10px 0;
         border-radius: 5px;
     }
 
@@ -87,7 +87,7 @@
         flex-direction: row;
         justify-content: center;
         padding: 20px 90px;
-        margin: 20px 0 0 -60px;
+        margin: 20px 0 -10px -60px;
         border-radius: 5px;
     }
 

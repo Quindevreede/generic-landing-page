@@ -4,6 +4,8 @@
   --font-family: 'Manrope', sans-serif;
 
   --gradient-text: linear-gradient(89.97deg, #b9edf9 10%, #0a6275 92.67%);
+  --gradient-text2: linear-gradient(89.97deg, #0a6275 10%, #b9edf9 192.67%);
+  --gradient-text3: linear-gradient(89.97deg, #b9edf9 -130%, #0a6275 200.67%);
   --gradient-button: linear-gradient(-3.97deg, #b9edf9 10%, #12b0d3 130.67%);
   --gradient-bar: linear-gradient(3.22deg, #ffffff -23%, #b9edf9 39%);
 
@@ -16,12 +18,14 @@
   --color-blue-dark: #0e89a4;
   --color-blue-darker: #0a6275;
   --color-blue-darkest: #063b46;
+  --color-blue-green: cadetblue;
+  --color-blue-green-dark: darkslategrey;
 
   --color-complementary-medium: #ffd2c2;
   --color-complementary-dark: #ffa280;
   --color-complementary-darkest:#ff6933;
 
-  --color-text: #0a6275;
-  --color-header-text: #0e89a4;
+  --color-text: #0e89a4;
+  --color-header-text: #109cbc;
 
 }

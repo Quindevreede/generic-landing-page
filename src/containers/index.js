@@ -1,3 +1,4 @@
+export { default as AboutList } from './aboutlist/AboutList';
 export { default as People } from './people/People';
 export { default as Tours } from './tours/Tours';
 export { default as Gallery } from './gallery/Gallery';

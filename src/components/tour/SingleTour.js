@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './tour.css';
 import Button from '../button/Button';
 
-function SingleTour({ id, image, info, name, price, removeTour })  {
+function SingleTour({ id, image, info, name, price, removeTour }) {
   const [readMore, setReadMore] = useState(false);
 
   return (
@@ -20,7 +20,7 @@ function SingleTour({ id, image, info, name, price, removeTour })  {
                 buttonStyle='btn--read-more'
                 buttonSize='btn--small'
                 onClick={() => setReadMore(!readMore)}>
-              {readMore ? 'show less' : '  read more'}
+                {readMore ? 'show less' : '  read more'}
             </Button>
           </p>
           <Button
@@ -28,7 +28,7 @@ function SingleTour({ id, image, info, name, price, removeTour })  {
               buttonStyle='btn--tours'
               buttonSize='btn--medium'
               onClick={() => removeTour(id)}>
-            not interested
+              not interested
           </Button>
         </footer>
       </article>

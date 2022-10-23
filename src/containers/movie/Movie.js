@@ -3,7 +3,7 @@ import './movie.css';
 import MovieListComponent from '../../components/movielistcomponent/MovieListComponent';
 import Alert from './Alert';
 import movieImage from '../../assets/movie/crazy4cultv7_web.jpg';
-import Button from "../../components/button/Button";
+import Button from '../../components/button/Button';
 
 function getLocalStorage() {
     let list = localStorage.getItem('list');
@@ -75,11 +75,11 @@ function Movie() {
 
     return (
         <main id='movie'>
-            <section className="outer-content-container">
-                <div className="inner-content-container">
-                    <div className="title">
+            <section className='outer-content-container'>
+                <div className='inner-content-container'>
+                    <div className='title'>
                         <h2>MOVIE</h2>
-                        <div className="underline"></div>
+                        <div className='underline'></div>
                     </div>
                     <div className='movielist-top__container'>
                         <div className='movielist__container'>

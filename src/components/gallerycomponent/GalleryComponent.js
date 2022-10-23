@@ -54,24 +54,24 @@ function GalleryComponent() {
                 <p className='gallery--text'>{text}</p>
                 <div className='gallery-button__container'>
                     <Button
-                        buttonStyle="btn--gallery"
-                        buttonSize="btn--medium"
-                        className="list--button"
+                        buttonStyle='btn--gallery'
+                        buttonSize='btn--medium'
+                        className='list--button'
                         onClick={prevPerson}>
                         PREV <FaChevronLeft />
                     </Button>
                     <Button
-                        buttonStyle="btn--gallery"
-                        buttonSize="btn--medium"
-                        className="list--button"
+                        buttonStyle='btn--gallery'
+                        buttonSize='btn--medium'
+                        className='list--button'
                         onClick={nextPerson}>
                         <FaChevronRight /> NEXT
                     </Button>
                 </div>
                 <Button
-                    buttonStyle="btn--gallery-random"
-                    buttonSize="btn--small"
-                    className="random--button"
+                    buttonStyle='btn--gallery-random'
+                    buttonSize='btn--small'
+                    className='random--button'
                     onClick={randomPerson}>
                     RANDOM ARTWORK
                 </Button>

@@ -1,4 +1,4 @@
-const people = [
+const ducks = [
   {
     id: 1,
     image: require('../../assets/ducks/Huey_Duck_2017.png'),
@@ -35,4 +35,4 @@ const people = [
   },
 ];
 
-export default people;
+export default ducks;

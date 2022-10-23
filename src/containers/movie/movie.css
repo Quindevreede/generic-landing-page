@@ -1,16 +1,16 @@
 #movie {
     position: relative;
-    padding: 50px 0 50px 0;
-    margin-top: -30px;
+    padding: 50px 0;
+    margin-top: -50px;
 }
 
 .movielist-top__container {
-    height: 500px;
+    height: 600px;
 }
 
 .movie-img__container img {
     max-width: 300px;
-    margin: 30px 0 30px 0;
+    margin: 30px 0;
     border-radius: 30px;
 }
 
@@ -19,8 +19,8 @@
 }
 
 .btn--movie-submit {
-    color: white;
-    background-color: cadetblue;
+    color: var(--color-background);
+    background-color: var(--color-blue-green);
     border-radius: 30px;
     border-color: transparent;
     margin-bottom: 20px;
@@ -29,7 +29,7 @@
 }
 
 .btn--movie-clear {
-    color: cadetblue;
+    color: var(--color-blue-green);
     border-radius: 30px;
     border-color: transparent;
     margin: 20px 0 50px 0;
@@ -52,7 +52,7 @@
         min-width: 500px;
         background-color: #01203d;
         border-radius: 50px;
-        margin: 30px 0 30px 0;
+        margin: 30px 0;
     }
 
     .movie-img__container img {

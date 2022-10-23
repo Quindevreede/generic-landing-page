@@ -88,7 +88,7 @@
     }
 
     .single-tour__container {
-        min-width: 330px;
+        min-width: 290px;
     }
 
 }
@@ -100,7 +100,7 @@
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 40px 0;
-        margin: 40px 0 40px 0;
+        margin: 40px 0 60px 0;
     }
 
     .single-tour__container {
@@ -116,7 +116,7 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 40px 40px;
-        margin: 40px 0 40px 0;
+        margin: 40px 0 60px 0;
     }
 
     .single-tour__container {
@@ -132,7 +132,7 @@
         display:grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 40px 60px;
-        margin: 40px -5px 40px 0;
+        margin: 40px -5px 60px 0;
     }
 
     .single-tour__container {
@@ -148,7 +148,7 @@
         display:grid;
         grid-template-columns: repeat(5, 1fr);
         grid-gap: 40px;
-        margin: 40px -5px 40px 0;
+        margin: 40px -5px 60px 0;
     }
 
     .single-tour__container {
