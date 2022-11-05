@@ -22,19 +22,20 @@
 .navbar-logo__container {
     display: flex;
     flex-direction: row;
-    padding: 0 0 0 10px;
+    align-items: center;
 }
 
 .navbar-logo__container img {
-    width: 50px;
-    padding: 0 0 0 15px;
+    height: 30px;
+    width: 30px;
+    margin-left: 20px;
 }
 
 .navbar-logo__container h4 {
     color: var(--color-blue-dark);
     font-weight: bolder;
     font-size: 18px;
-    padding: 5px 0 0 5px;
+    margin-left: 5px;
 }
 
 .navbar-logo {

@@ -6,11 +6,13 @@
   font-family: 'Manrope', sans-serif;
 }
 
-body {
+html,body
+{
   width: 100%;
-  padding: 0;
+  height: 100%;
   margin: 0;
-  background: var(--color-background);
+  padding: 0;
+  overflow-x: hidden;
 }
 
 p {
